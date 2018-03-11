@@ -1,0 +1,227 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script|Lato);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	color: #3d3d3d;
+}
+
+.container {
+	margin: 0 auto;
+	display: flex;
+}
+
+/*HEADER*/
+header {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/header.png);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+}
+
+header h1 {
+	width: 40%;
+	margin: 8%;
+}
+
+.welcome {
+	font-family: 'Dancing Script', cursive;
+	max-width: 30%;
+	margin: 8%;
+	margin-top: 0;
+	background-color: rgba(255, 255, 255, 0.7);
+	text-align: left;
+}
+
+.welcome span {
+	font-size: 2rem;
+}
+
+/*NAVIGATION*/
+
+nav {
+	align-self: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	min-width: 50%;
+}
+
+button {
+	font-size: 1.2rem;
+	margin: 5%;
+	padding: 3%;
+	border: 2px solid #3d3d3d;;
+	border-radius: 10%;
+	background-color: rgba(255, 255, 255, 0.7);
+	transition: transform 2s;
+}
+
+button:active {
+	transform: translateY(5px);
+}
+
+a {
+	text-decoration: none;
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	color: #3d3d3d;
+}
+
+/*WORK*/
+.projects {
+	width: 95%;
+	margin: 5%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.projects h1 {
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 5%;
+}
+
+.project {
+	width: 100%;
+	height: 500px;
+	display: flex;
+	flex-direction: row;
+}
+
+.project-description {
+	width: 40%;
+}
+
+.project1-view {
+	display: flex;
+	justify-content: center;
+	height: 80%;
+	width: 50%;
+	margin-left: 5%;
+	background-image: url(../img/1.png);
+	background-size: cover;
+	background-position: center;
+	border: 0.5px solid #3d3d3d;
+	border-radius: 1%;
+}
+
+.project2-view {
+	display: flex;
+	justify-content: center;
+	height: 60%;
+	width: 50%;
+	margin-right: 5%;
+	background-image: url(../img/2.png);
+	background-size: cover;
+	background-position: center;
+	border: 0.5px solid #3d3d3d;
+	border-radius: 1%;
+}
+
+.project3-view {
+	display: flex;
+	justify-content: center;
+	height: 80%;
+	width: 50%;
+	margin-right: 5%;
+	background-image: url(../img/3.png);
+	background-size: cover;
+	background-position: center;
+	border: 0.5px solid #3d3d3d;
+	border-radius: 1%;
+}
+
+.project4-view {
+	display: flex;
+	justify-content: center;
+	height: 80%;
+	width: 50%;
+	margin-right: 5%;
+	background-image: url(../img/4.png);
+	background-size: cover;
+	background-position: center;
+	border: 0.5px solid #3d3d3d;
+	border-radius: 1%;
+}
+
+.project button {
+	align-self: center;
+	display: none;
+}
+
+
+[class$="view"]:hover button {
+	display: block;
+}
+
+[class$="view"]:active button {
+	display: block;
+}
+
+
+/*CONTACT*/
+
+.contact {
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.contact h3 {
+	text-align: left;
+	width: 30%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.contact-details {
+	width: 50%;
+	font-size: 1rem;
+}
+
+.contact-details i {
+	font-size: 2rem;
+}
+
+[class^="fa"] {
+	margin-left: 10%;
+}
+
+[class^="fa"]:hover {
+	color: #fff;
+	background-color: #3d3d3d;
+}
+
+[class^="fa"]:active {
+	color: #fff;
+	background-color: #3d3d3d;
+}
+
+/*FOOTER*/
+
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+
+@media screen and (max-width:550px) {
+    .contact {
+    	font-size: 80%;
+    }
+
+    .contact-details {
+    	font-size: 90%;
+    }
+}
