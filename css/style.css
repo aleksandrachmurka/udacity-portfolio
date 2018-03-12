@@ -15,6 +15,7 @@ body {
 	display: flex;
 }
 
+
 /*HEADER*/
 header {
 	width: 100%;
@@ -54,7 +55,12 @@ nav {
 	min-width: 50%;
 }
 
-button {
+
+nav a {
+	text-decoration: none;
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	color: #3d3d3d;
 	font-size: 1.2rem;
 	margin: 5%;
 	padding: 3%;
@@ -64,15 +70,8 @@ button {
 	transition: transform 2s;
 }
 
-button:active {
+nav a:active {
 	transform: translateY(5px);
-}
-
-a {
-	text-decoration: none;
-	font-family: "Lato", sans-serif;
-	font-weight: 300;
-	color: #3d3d3d;
 }
 
 /*WORK*/
@@ -155,17 +154,27 @@ a {
 	border-radius: 1%;
 }
 
-.project button {
+.project a {
 	align-self: center;
 	display: none;
+	text-decoration: none;
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	color: #3d3d3d;
+	font-size: 1.2rem;
+	margin: 5%;
+	padding: 3%;
+	border: 2px solid #3d3d3d;;
+	border-radius: 10%;
+	background-color: rgba(255, 255, 255, 0.7);
 }
 
 
-[class$="view"]:hover button {
+[class$="view"]:hover a {
 	display: block;
 }
 
-[class$="view"]:active button {
+[class$="view"]:active a {
 	display: block;
 }
 
@@ -192,6 +201,7 @@ a {
 
 .contact-details i {
 	font-size: 2rem;
+	color: #3d3d3d;
 }
 
 [class^="fa"] {
